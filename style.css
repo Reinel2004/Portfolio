@@ -110,9 +110,9 @@ header .image::before{
     content: 'o';
     position: absolute;
     top: 0;
-    left: 81%;
+    left: 75%;
     transform: translateX(-50%);
-    font-size: 40rem;
+    font-size: 60rem;
     color: yellow;
     line-height: 22rem;
     opacity: 0.2;
@@ -163,3 +163,47 @@ footer .footer{
     padding: 5px 10px;
     width: 100%;
 }
+
+
+
+@media only screen and (width < 900px) {
+    .nav-links{
+        display: none;
+    }
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    header .image{
+        grid-area: 1/1/2/2;
+        
+    }
+    header .image::before{
+        content: 'o';
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 70rem;
+        color: yellow;
+        line-height: 22rem;
+        opacity: 0.2;
+        z-index: -1;
+    }
+    .feautures{
+        grid-template-columns: repeat(2, 1fr);
+    }   
+}
+
+@media (width < 400px) {
+    .nav-links{
+        display: none;
+    }
+    header .image::before{
+        display: none;
+    }
+    .feautures{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+

@@ -84,3 +84,9 @@ main .text-center{
 hr{
     color: white;
 }
+
+@media (width < 400){
+    .nav-links{
+        display: none;
+    }
+}
