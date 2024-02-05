@@ -194,7 +194,7 @@ footer .footer{
     }   
 }
 
-@media (width < 400px) {
+@media (width < 600px) {
     .nav-links{
         display: none;
     }
