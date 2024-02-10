@@ -5,7 +5,9 @@
     outline: none;
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 img{
     width: 100%;
     display: flex;
@@ -163,8 +165,46 @@ footer .footer{
     padding: 5px 10px;
     width: 100%;
 }
-
-
+section .about-content{
+    color: gray
+}
+section .header-about-me{
+    color: pink;
+}
+section .header-about{
+    color: #fff;
+}
+section .info{
+    color: #fff;
+    margin-bottom: 3rem;
+}
+section .personal-information{
+    margin-bottom: 60px;
+}
+section .header-info{
+    color: #fff;
+}
+section .btn-cv{
+    padding: 11px 12px;
+    border-radius: 10px;
+    background-color: pink;
+    color: black;
+}
+section .header-proj{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+section .card img{
+    width: 100%;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.5s ease-in-out;
+    border: none;
+}
+section .card:hover img{
+    transform: scale(1.1);
+}
 
 @media only screen and (width < 900px) {
     .nav-links{
@@ -204,6 +244,8 @@ footer .footer{
     .feautures{
         grid-template-columns: repeat(1, 1fr);
     }
-    
+    section .btn-cv{
+        display: none;
+    }
 }
 
